@@ -772,13 +772,20 @@ Home section
 
   .home-text h1 {
     font-size: 40px;
+    margin: 0 auto;
+    max-width: 280px;
   }
   .home-text .btn {
     margin: 0 7px 15px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 767px) {
+  .home-text h1 {
+    margin: 0 auto;
+    max-width: 250px;
+    font-size: 35px;
+  }
   .about-img,
   .about-text,
   .contact-form,
@@ -812,6 +819,8 @@ Home section
     font-size: 35px;
   }
   .home-text h1 {
+    margin: 0 auto;
+    max-width: 250px;
     font-size: 35px;
   }
 
