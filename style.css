@@ -780,7 +780,7 @@ Home section
   }
 }
 
-@media (max-width: 767px) and (min-width: 767px) {
+@media (max-width: 767px) {
   .home-text h1 {
     margin: 0 auto;
     max-width: 250px;
