@@ -452,9 +452,34 @@ Home section
   padding: 15px;
 }
 .home-text h1 {
+  max-width: 350px;
+  border-right: solid 5px rgba(14, 13, 13, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 50px;
   text-transform: capitalize;
+  animation: animated-text 2s steps(20, end) 1s 1 normal both,
+    animated-cursor 1000ms linear infinite;
 }
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 472px;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(15, 15, 15, 0.75);
+  }
+  to {
+    border-right-color: rgba(168, 162, 162, 0.75);
+  }
+}
+
 .home-text h2 {
   font-size: 20px;
   font-weight: 300;
